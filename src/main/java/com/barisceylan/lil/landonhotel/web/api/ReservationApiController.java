@@ -29,7 +29,6 @@ public class ReservationApiController {
         }
         return this.reservationRepository.findAll();
     }
-
     @PostMapping("/{id}")
     @ResponseStatus(HttpStatus.CREATED)
     public Reservation addReservation(@RequestBody Reservation reservation){
